@@ -8,7 +8,7 @@ const whitelist = ["https://menu-react-kappa.vercel.app"];
 app.use(cors({ origin: whitelist }));
 
 app.get("/", (req, res) => {
-  res.send("Bienvenido a FB MENU API");
+  res.json("Bienvenido a FB MENU API");
 });
 
 app.use("/api", router);
