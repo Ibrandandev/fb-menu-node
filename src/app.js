@@ -3,7 +3,10 @@ import router from "./routers/index.js";
 import cors from "cors";
 const app = Express();
 
-const whitelist = ["https://menu-react-kappa.vercel.app"];
+const whitelist = [
+  "https://menu-react-kappa.vercel.app",
+  "https://menu-react-ibrandan.vercel.app",
+];
 
 app.use(cors({ origin: whitelist }));
 
