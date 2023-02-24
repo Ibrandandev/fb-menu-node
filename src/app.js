@@ -6,7 +6,7 @@ const app = Express();
 const whitelist = [
   "https://menu-react-kappa.vercel.app",
   "https://menu-react-ibrandan.vercel.app",
-  "http://127.0.0.1:5173/",
+  "http://127.0.0.1:5173",
 ];
 
 app.use(cors({ origin: whitelist }));
