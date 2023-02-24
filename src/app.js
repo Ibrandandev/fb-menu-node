@@ -3,7 +3,9 @@ import router from "./routers/index.js";
 import cors from "cors";
 const app = Express();
 
-app.use(cors());
+const whitelist = ["http://localhost:5173"];
+
+app.use(cors({ origin: whitelist }));
 
 app.use("/api", router);
 
