@@ -4,9 +4,8 @@ import cors from "cors";
 const app = Express();
 
 const whitelist = [
-  "https://menu-react-kappa.vercel.app",
-  "https://menu-react-ibrandan.vercel.app",
-  "http://localhost:5173",
+  "https://fb-menu-front.vercel.app/",
+  "http://localhost:5500/",
 ];
 
 app.use(cors({ origin: whitelist }));
